@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#un{
+    height:80px;
+    width:80px;
+    background: red;
+    animation: 3s ease-in-out 1s infinite test;
+}
+
+@keyframes test {
+    /* from{margin: 50px; opacity:0;} */
+    /* to{margin:500px; opacity:1; transform:scale(0.5);} */
+
+    /* 0%{margin: 50px; opacity:0;}
+    50%{margin:0;}
+    100%{margin:500px; opacity:1; transform:scale(0.5);} */
+    to{transform:rotate(360deg);}
+}
+
+#deux{
+    height:80px;
+    width:80px;
+    background: blue;
+    animation: 3s ease-in-out 1s infinite test2;
+}
+
+@keyframes test2 {
+    to{transform: matrix(1, 2, 3, 4, 5, 6);}
+}
+
+#trois{
+    height:80px;
+    width:80px;
+    background: yellow;
+    animation: 3s ease-in-out 1s infinite test3;
+}
+
+@keyframes test3 {
+    to{transform: scale(2, 0.5);}
+}
+/* changement de taille */
+
+#quatre{
+    height:80px;
+    width:80px;
+    background: indigo;
+    animation: 3s ease-in-out 1s infinite test4;
+}
+
+@keyframes test4 {
+    to{transform: skew(30deg, 20deg);}
+}
+/* rend oblique --> étirement*/
+
+#cinq{
+    height:80px;
+    width:80px;
+    background: green;
+    animation: 3s ease-in-out 1s infinite test5;
+}
+
+@keyframes test5 {
+    to{transform: translate(120px, 50%);}
+}
+/* déplacement vers la droite */
+
+#six{
+    height:80px;
+    width:80px;
+    background: orange;
+    animation: 3s ease-in-out 1s infinite test6;
+}
+
+@keyframes test6 {
+    to{transform: scale(0.5) translate(-100%, -100%);}
+}
+/* changement de taille + déplacement vers la gauche */
+
+

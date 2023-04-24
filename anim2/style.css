@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    background:darkblue;
+    display:grid;
+    place-items:center;
+
+}
+
+.box{
+    position:relative;
+    height:300px;
+    width:200px;
+    background:red;
+    transform-style:preserve-3d;
+    transform:perspective(1000px);
+    animation: angelika 6s ease-in infinite;
+}
+
+div img{
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit:cover;
+    transform-style:preserve-3d;
+    backface-visibility:hidden;
+}
+
+div img:nth-child(2){
+    transform:rotateY(-180deg);
+}
+
+@keyframes angelika{
+    from{transform: rotateY(0);}
+    to{transform: rotateY(360deg)}
+}
+
